@@ -1,0 +1,6 @@
+framework module LCCheck {
+  umbrella header "LCCheck.h"
+
+  export *
+  module * { export * }
+}
