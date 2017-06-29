@@ -25,7 +25,7 @@ LCCheck.framework
 ```
 //依次校验手机号、密码
     [LCCheck lc_checkWith:^(LCCheck *check) {
-        check.textField(self.phoneTextField).name(@"手机号").null().validate(LCCheckRegularPhone,  nil).with.textField(self.passwordTextField).name(@"密码").null().validate(LCCheckRegularPassword, nil);
+        check.textField(self.phoneTextField).name(@"手机号").null().validate(LCCheckRegularPhone, nil).with.textField(self.passwordTextField).name(@"密码").null().validate(LCCheckRegularPassword, nil);
     } completion:^(LCCheckResult result, NSString *message, UITextField *textField) {
         if (result == LCCheckResultUnValidated || result == LCCheckResultNull) {
             [self toastWith:message];
