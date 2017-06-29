@@ -1,5 +1,6 @@
 # LCCheck
-Check the textField input
+Check the textField input<br>
+校验textField的输入是否合法
 
 ## 引用
 LCCheck.framework
